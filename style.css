@@ -1,6 +1,48 @@
 body {
-    /*background: linear-gradient(to left, #00d4ff, #9198e5);
-    background-image: linear-gradient(to right, #DECBA4, #3E5151);*/
+    /*    #212a2d #65858C
+    background: linear-gradient(to left, #00d4ff, #9198e5);
+    background: linear-gradient(#b5e48c, #457b9d) fixed;
+    background: linear-gradient(to bottom right, #DECBA4, #3E5151) fixed;
     background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
-
+    background-image: linear-gradient(#D0CAB2,#89B5AF, #89B5AF ,#89B5AF,#D0CAB2);
+    background: linear-gradient( 120deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ) fixed;*/
+    background: linear-gradient(#F2F2F2, #80B4BF, #65858C) fixed;
+    font-family: 'Montserrat', monospace;
+    color: #212a2d;
+}
+nav {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    color: #012E40;
+    margin: 20px;
+    width: 100%;
+}
+#navigation li {
+    padding-right: 20px;
+    display: inline;
+  }
+a {
+    text-decoration: none;
+}
+#navigation li a {
+    font-weight: bold;
+    padding: 1px;
+    color: #012E40;
+}
+.active, #navigation li a:hover {
+    border-bottom: 2px solid #80B4BF;
+}
+#intro .left-picture{
+    float: left;
+    margin: 0 40px 10px 10px;
+}
+footer {
+	background-color: red;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+footer img {
+    width: 30px;
 }
