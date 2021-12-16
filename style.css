@@ -1,27 +1,24 @@
 body {
-    /*    #212a2d #65858C
-    background: linear-gradient(to left, #00d4ff, #9198e5);
-    background: linear-gradient(#b5e48c, #457b9d) fixed;
-    background: linear-gradient(to bottom right, #DECBA4, #3E5151) fixed;
-    background-image: linear-gradient( 109.6deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
-    background-image: linear-gradient(#D0CAB2,#89B5AF, #89B5AF ,#89B5AF,#D0CAB2);
-    background: linear-gradient( 120deg, rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% ) fixed;*/
-    background: linear-gradient(#F2F2F2, #80B4BF, #65858C) fixed;
+    background: linear-gradient(#F2F2F2, #80B4BF, #65858C, #193C40) fixed;
     font-family: 'Montserrat', monospace;
     color: #212a2d;
 }
+#body {
+    display: flex;
+    flex-direction: column;
+}
 nav {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Bungee', Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: flex-end;
     color: #012E40;
-    margin: 20px;
+    margin: 20px 40px 20px 0;
     width: 100%;
 }
 #navigation li {
     padding-right: 20px;
     display: inline;
-  }
+}
 a {
     text-decoration: none;
 }
@@ -33,16 +30,78 @@ a {
 .active, #navigation li a:hover {
     border-bottom: 2px solid #80B4BF;
 }
+#intro {
+    width: 75%;
+    margin: 30px auto 80px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#intro-imgs {
+    display: flex;
+    flex-direction: column;
+}
 #intro .left-picture{
-    float: left;
-    margin: 0 40px 10px 10px;
+    float: right;
+    margin-left: 50px;
+}
+#intro #oa {
+    transform:rotate(-12deg);
+    z-index: 2;
+}
+#intro #ohw {
+    transform:rotate(12deg);
+    z-index: 1;
+    padding-left: 35px; 
+}
+p {
+    text-align: center;
+    line-height: 1.5;
+    font-size: large; 
+}
+.container {
+    clear: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 60px 10px 60px;
+}
+.container img {
+    width: 260px;
+    height: 260px;
+}
+.hobbies{
+    position: relative;
+    text-align: center;
+}
+.hobbies .centered {
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Bungee', Helvetica, Arial, sans-serif;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(4, 46, 184), 0 0 0.2em blue;
+}
+.zoom {
+    transition: 0.5s all ease-in-out;
+    filter: brightness(80%);
+}
+.zoom:hover{
+    filter: brightness(100%);
+    transform: scale(1.2);
 }
 footer {
-	background-color: red;
     text-align: center;
     display: inline-block;
     padding: 10px;
+    margin: 20px auto;
 }
 footer img {
     width: 30px;
+}
+footer img:hover {
+    background-color: #80B4BF;
 }
