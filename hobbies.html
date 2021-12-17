@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Website</title>
+        <title>Olga's Website</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Montserrat:400,700" rel="stylesheet">
     </head>
@@ -9,13 +9,87 @@
         <div id="body">
             <nav>
                 <ul id="navigation">
-                    <li><a class="active" href="index.html" >Home</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="index.html" onclick="changeClass()">Home</a></li>
+                    <li><a href="trips.html" onclick="changeClass(this)">Trips</a></li>
+                    <li><a class="active" href="hobbies.html" onclick="changeClass(this)">Hobbies</a></li>
                 </ul>
             </nav>
 
             <div id="main">
+                <div class="hobby">
+                    <h1>Surfing in Portugal</h1>
+                    <div class="photos">
+                        <img class="long" src="Images/surfing/IMG_0224.jpg" alt="">
+                        <div>
+                            <div class="row">
+                                <img src="Images/surfing/IMG_0374.jpg" alt="">
+                                <img src="Images/surfing/IMG_9965.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <img src="Images/surfing/surf2017.jpeg" alt="">
+                                <img src="Images/surfing/2_5370967765991555665.JPG" alt="">
+                            </div>
+                        </div>
+                        <img class="long" src="Images/surfing/surf17.jpeg" alt="" height="350px">
+                    </div>
+                </div>
+
+                <div class="hobby">
+                    <h1>Skydiving in Ukraine and Spain</h1>
+                    <div class="photos">
+                        <img class="long-img" src="Images/skydiving/sl.jpeg" alt="">
+                        <div class="row">
+                            <div class="column">
+                                <img src="Images/skydiving/sky.jpeg" alt="">
+                                <img src="Images/skydiving/sp1.jpeg" alt="">  
+                            </div>
+                            <img class="long-img" src="Images/skydiving/sp2.jpeg" alt="">
+                            <div class="column">
+                                <img src="Images/skydiving/sd1.jpeg" alt="">
+                                <img src="Images/skydiving/sd.jpeg" alt="">
+                            </div>
+                        </div>
+                        <img class="long-img" src="Images/skydiving/sd2.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="hobby">
+                    <h1>Scubadiving in Ukraine and Egypt</h1>
+                    <div class="photos">
+                        <img src="Images/scubadyving/70115709_2565224910188134_4805255414159507456_n.jpg" alt="">
+                        <img src="Images/scubadyving/dol.jpeg" alt="">
+                        <img src="Images/scubadyving/IMG_0943.JPG" alt="">
+                        <img src="Images/scubadyving/IMG_1116.JPG" alt="">
+                    </div>
+                </div>
+
+                <div class="hobby">
+                    <h1>Ballet in Ukraine</h1>
+                    <div class="photos">
+                        <img class="long-img" src="Images/ballet/image-0-02-04-e2b646747be57b5139350bf07a0732c3d8eda24da05f7e2ce4caeab484f7832b-V-001.jpg" alt="">
+                        <div class="row">
+                            <div class="column">
+                                <img src="Images/ballet/image-0-02-05-0a29bc1f195be7cb9cdbd9cf4cd584a00f155fd61326ee7b42d990943898c1bc-V.jpg" alt="">
+                                <img src="Images/ballet/image-0-02-04-6ab9a3e280af890f1d8e2b1bc94b79aaee74aae7852657d3da147af8b8292a1d-V-001.jpg" alt="">
+                            </div>
+                            <img class="long-img" src="Images/ballet/IMG_4540.JPEG" alt="">
+                            <div class="column">
+                                <img src="Images/ballet/image-0-02-05-0fc389ba41fda95f2639fa8b207513db9612b73a7cb660ceb5ffae68af589a7c-V.jpg" alt="">
+                                <img src="Images/ballet/IMG_1762.JPEG" alt="">
+                            </div>
+                        </div>
+                        <img class="long-img" src="Images/ballet/image-0-02-05-24bedacb471a305c1fc1cc4d3cd19eaa5d62c778a0b979c7a66abf1c49cacde7-V.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="hobby">
+                    <h1>Slacklining in Ukraine</h1>
+                    <div class="photos">
+                        <img src="Images/slacklining/IMG_0136.JPG" alt="">
+                        <img src="Images/slacklining/IMG_0133.JPG" alt="">
+                        <img src="Images/slacklining/slack.jpeg" alt="">
+                    </div>
+                </div>
             </div>
 
             <footer>

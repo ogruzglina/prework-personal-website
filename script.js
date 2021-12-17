@@ -1,3 +1,12 @@
-/*const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
-document.querySelector("body").appendChild(h2);*/
+function changeClass(navElement) {
+    let list = document.getElementById("navigation");
+    let listOfA = list.getElementsByTagName("a");
+
+    listOfA.forEach(element => element.className = "");
+    navElement.className = 'active';   
+}
+
+function clickOnImg(href) {
+    location.href = href;
+}
+

@@ -105,3 +105,39 @@ footer img {
 footer img:hover {
     background-color: #80B4BF;
 }
+
+
+
+.photos img{
+    width: 275px;
+    height: 225px;
+    text-align: center;
+}
+.photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.hobby {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 20px 15px 20px;
+    height: auto;
+    text-align: center;
+}
+.photos .long-img {
+    height: 450px;
+    width: 300;
+}
+.photos .long {
+    height: 450px;
+    width: auto;
+}
+.photos .row {
+    display: flex;
+    flex-direction: row;
+}
+.photos .column {
+    display: flex;
+    flex-direction: column;
+}

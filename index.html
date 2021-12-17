@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>My Website</title>
+        <title>Olga's Website</title>
         <link rel="stylesheet" href="style.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Bungee|Roboto+Montserrat:400,700" rel="stylesheet">
     </head>
@@ -9,9 +9,9 @@
         <div id="body">
             <nav>
                 <ul id="navigation">
-                    <li><a class="active" href="index.html" >Home</a></li>
-                    <li><a href="trips.html">Trips</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a class="active" href="index.html" onclick="changeClass()">Home</a></li>
+                    <li><a href="trips.html" onclick="changeClass(this)">Trips</a></li>
+                    <li><a href="hobbies.html" onclick="changeClass(this)">Hobbies</a></li>
                 </ul>
             </nav>
 
@@ -35,35 +35,36 @@
 
                 <p>Some of my hobbies:</p>
                 <div class="container">
-                    <div class="hobbies zoom">
-                        <a href="trips.html"> <img src="Images/Europe/p.jpeg" alt="Paris Eiffel Tower"/> 
-                            <div class="centered"><h2>Traveling</h2></div>
-                        </a>              
+                    <div class="hobbies zoom"> <!-- Open another page via JS -->
+                        <img src="Images/Europe/p.jpeg" onclick="clickOnImg('trips.html')" alt="Paris Eiffel Tower"/> 
+                        <div class="centered"><h2>Traveling</h2></div>              
                     </div>
+
                     <div class="hobbies zoom">
-                        <a href="hobbies.html"> <img src="Images/surfing/surf17.jpeg" alt="Olga on a wave"/> 
-                            <div class="centered"><h2>Surfing</h2></div>
-                        </a>              
+                        <img src="Images/surfing/surf17.jpeg" onclick="clickOnImg('hobbies.html')" alt="Olga on a wave"/> 
+                        <div class="centered"><h2>Surfing</h2></div>             
                     </div>
-                    <div class="hobbies zoom">
+
+                    <div class="hobbies zoom"> <!-- Open another page via <a> -->
                         <a href="hobbies.html"> <img src="Images/skydiving/sl.jpeg" alt="Olga before staticline jump"/>
                             <div class="centered"><h2>Skydiving</h2></div>
                         </a>               
                     </div>
+
                     <div class="hobbies zoom">
-                        <a href="hobbies.html"> <img src="Images/scubadyving/dol.jpeg" alt="Olga with dolphin under water" aria-label="Scubadiving"/> 
-                            <div class="centered"><h2>Scubadiving</h2></div>
-                        </a>
+                        <img src="Images/scubadyving/dol.jpeg" onclick="clickOnImg('hobbies.html')" alt="Olga with dolphin under water"/> 
+                        <div class="centered"><h2>Scubadiving</h2></div>
                     </div>
-                    <div class="hobbies zoom">
-                        <a href="hobbies.html"> <img src="Images/ballet/image-0-02-04-6ab9a3e280af890f1d8e2b1bc94b79aaee74aae7852657d3da147af8b8292a1d-V-001.jpg" alt="Olga in pointe"/> 
-                            <div class="centered"><h2>Ballet</h2></div>
-                        </a>               
+
+                    <div class="hobbies zoom">  
+                        <img src="Images/ballet/image-0-02-04-6ab9a3e280af890f1d8e2b1bc94b79aaee74aae7852657d3da147af8b8292a1d-V-001.jpg" 
+                           onclick="clickOnImg('hobbies.html')" alt="Olga in pointe"/> 
+                        <div class="centered"><h2>Ballet</h2></div>          
                     </div>
+
                     <div class="hobbies zoom">
-                        <a href="hobbies.html"> <img src="Images/slacklining/slack.jpeg" alt="Olga's slacklining"/> 
-                            <div class="centered"><h2>Slacklining</h2></div>
-                        </a>
+                        <img src="Images/slacklining/slack.jpeg" onclick="clickOnImg('hobbies.html')" alt="Olga's slacklining"/> 
+                        <div class="centered"><h2>Slacklining</h2></div>
                     </div>
                 </div>
             </div>
