@@ -41,7 +41,7 @@ a {
     display: flex;
     flex-direction: column;
 }
-#intro .left-picture{
+#intro .right-picture{
     float: right;
     margin-left: 50px;
 }
