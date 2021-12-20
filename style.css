@@ -73,6 +73,7 @@ p {
 .hobbies{
     position: relative;
     text-align: center;
+    cursor: pointer;
 }
 .hobbies .centered {
     position: absolute;
@@ -105,9 +106,18 @@ footer img {
 footer img:hover {
     background-color: #80B4BF;
 }
+#myBtn {
+    width: 30px;
+    display: none;
+    position: fixed;
+    z-index: 99;
+    cursor: pointer;
+    bottom: 35px;
+    right: 30px;
+}
 
 
-
+/* for Hobbies.html*/
 .photos img{
     width: 275px;
     height: 225px;
